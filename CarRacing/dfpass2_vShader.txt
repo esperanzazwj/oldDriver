@@ -1,0 +1,10 @@
+#version 400 core
+uniform mat4 WVPmat;
+layout(location=0) in vec2 Position;
+layout(location=1) in vec2 TexCoordv;
+out vec2 TexCoordf;
+void main()
+{
+	gl_Position=WVPmat*vec4(Position,0.0,1.0);
+	TexCoordf=TexCoordv;
+};

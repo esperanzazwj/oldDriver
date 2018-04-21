@@ -1,0 +1,137 @@
+#version 400 core
+struct LightProperties
+{
+	bool isEnabled;
+	bool isLocal;
+	bool isSpot;
+	vec3 ambient;
+	vec3 color;
+	vec3 position;
+	vec3 coneDirection;
+	float spotCosCutoff;
+	float spotExponent;
+	float constantAttenuation;
+	float linearAttenuation;
+	float quadraticAttenuation;
+};
+const int MaxLights=10;
+uniform int NumLights;
+uniform LightProperties Lights[MaxLights];
+uniform vec3 EyePosition;
+uniform bool HasShadow;
+uniform mat4 WorldMat;
+uniform mat4 ShadowMat[3];
+uniform float CascadeEndClipSpace[3];
+uniform sampler2DShadow DepthTexture[3];
+uniform sampler2D WorldPosTex;
+uniform sampler2D NormalTex;
+uniform sampler2D DiffuseColorTex;
+uniform sampler2D SpecularColorTex;
+uniform sampler2D KaTex;
+uniform sampler2D KdTex;
+uniform sampler2D KsTex;
+uniform sampler2D ShininessTex;
+
+in vec2 TexCoordf;
+layout(location=0) out vec4 FragColor;
+vec2 CalcTexCoord()
+{
+   return vec2(gl_FragCoord.x/1920,gl_FragCoord.y/1080);
+} 
+
+float CalcShadowFactor(int index, vec4 _LightSpacePos)
+{
+	const float EPSILON=0.002;
+    vec3 ProjCoords = _LightSpacePos.xyz / _LightSpacePos.w;
+    vec2 UVCoords;
+    UVCoords.x = 0.5 * ProjCoords.x + 0.5;
+    UVCoords.y = 0.5 * ProjCoords.y + 0.5;
+    float z = 0.5 * ProjCoords.z + 0.5;
+    float xOffset = 1.0/1920.0;
+	float yOffset = 1.0/1080.0;
+    float Factor = 0.0;
+    for (int y = -1 ; y <= 1 ; y++) {
+        for (int x = -1 ; x <= 1 ; x++) {
+            vec2 Offsets = vec2(x * xOffset, y * yOffset);
+            vec3 UVC = vec3(UVCoords + Offsets, z - EPSILON);
+		 Factor += texture(DepthTexture[index], UVC);
+       }
+    }
+    return Factor / 9.0;
+} 
+void main()
+{
+	vec2 TexCoord=CalcTexCoord();
+	vec4 Position4=texture(WorldPosTex,TexCoord);
+	vec3 Position=Position4.xyz;
+	float zBuffer=Position4.w;
+	if (abs(Position.x)<0.0001 && abs(Position.y)<0.0001 && abs(Position.z)<0.0001)
+		discard;
+	vec3 Normal=texture(NormalTex,TexCoord).xyz;
+	vec3 DiffuseColor=texture(DiffuseColorTex,TexCoord).xyz;
+	vec3 ambientColor=DiffuseColor;
+	vec3 SpecularColor=texture(SpecularColorTex,TexCoord).xyz;
+	vec3 Ka=texture(KaTex,TexCoord).xyz;;
+	vec3 Kd=texture(KdTex,TexCoord).xyz;;
+	vec3 Ks=texture(KsTex,TexCoord).xyz;;
+	float Shininess=texture(ShininessTex,TexCoord).x;
+
+	vec3 ambientLight=vec3(0.0,0.0,0.0);
+	vec3 scatteredLight=vec3(0.0,0.0,0.0);
+	vec3 reflectedLight=vec3(0.0,0.0,0.0);
+	for (int i=0;i<NumLights;i++)
+	{
+		if (!Lights[i].isEnabled) continue;
+		vec3 halfVector;
+		vec3 lightDirection=Lights[i].position;
+		vec3 EyeDirection=EyePosition-Position.xyz;
+		float attenuation=1.0;
+		if (Lights[i].isLocal)
+		{
+			lightDirection=lightDirection-Position.xyz;
+			float lightDistance=length(lightDirection);
+			lightDirection=lightDirection/lightDistance;
+			attenuation=1.0/(Lights[i].constantAttenuation+Lights[i].linearAttenuation*lightDistance+Lights[i].quadraticAttenuation*lightDistance*lightDistance);
+			if (Lights[i].isSpot)
+			{
+				float spotCos=dot(lightDirection,-Lights[i].coneDirection);
+				if (spotCos<Lights[i].spotCosCutoff)
+					attenuation=0.0;
+				else attenuation*=pow(spotCos,Lights[i].spotExponent);
+			}
+			halfVector=normalize(lightDirection+EyeDirection);
+		}
+		else halfVector=normalize(lightDirection+EyeDirection);
+		float diffuse=max(0.0,dot(Normal,lightDirection));
+		float specular=max(0.0,dot(Normal,halfVector));
+		if (diffuse==0.0 || Shininess==0.0)
+			specular=0.0;
+		else
+			specular=pow(specular,Shininess);
+		ambientLight+=Ka*Lights[i].color*Lights[i].ambient*attenuation;
+		scatteredLight+=Kd*Lights[i].color*diffuse*attenuation;
+		reflectedLight+=Ks*Lights[i].color*specular*attenuation;
+	}
+	
+	vec4 LightSpacePos[3];
+	for (int i=0;i<3;i++)
+		LightSpacePos[i]=ShadowMat[i]*vec4(Position,1.0);
+	vec4 ViewSpacePos = WorldMat*vec4(Position,1.0);
+	float ClipSpacePosZ = ViewSpacePos.z;
+	gl_FragDepth=zBuffer;//ViewSpacePos.z/ViewSpacePos.w;
+
+	float shadow=1.0;
+	if (HasShadow)
+	{
+		for (int i = 0 ; i < 3 ; i++)
+		if ( ClipSpacePosZ <= CascadeEndClipSpace[i]) 
+			{
+				shadow = CalcShadowFactor(i, LightSpacePos[i]);
+				break;
+			}
+		 }
+	vec3 rgb=DiffuseColor*scatteredLight+SpecularColor.rgb*reflectedLight;
+	FragColor=vec4(ambientColor.rgb*ambientLight,0)+shadow*vec4(rgb,1.0f);
+	//FragColor=vec4(DiffuseColor.rgb,1.0);
+	//FragColor=vec4(1.0,1.0,0.0,1.0);
+}

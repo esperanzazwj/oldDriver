@@ -1,0 +1,47 @@
+#version 400 core
+uniform vec3 Ka;
+uniform vec3 Kd;
+uniform vec3 Ks;
+uniform float Shininess;
+uniform bool HasDiffuseTexture;
+uniform bool HasSpecularTexture;
+uniform sampler2D DiffuseTexture;
+uniform sampler2D SpecularTexture;
+uniform vec3 EyePosition;
+in vec4 Position;
+in vec3 Normal;
+in vec2 TexCoord;
+layout(location=0) out vec4 WorldPosOut;
+layout(location=1) out vec3 NormalOut;
+layout(location=2) out vec3 DiffuseColorOut;
+layout(location=3) out vec3 SpecularColorOut;
+layout(location=4) out vec3 KaOut;
+layout(location=5) out vec3 KdOut;
+layout(location=6) out vec3 KsOut;
+layout(location=7) out vec3 ShininessOut;
+
+void main()
+{
+	vec4 tColor=texture(DiffuseTexture,TexCoord);
+		if (tColor.a<=0.0001) discard;
+	vec4 DiffuseColor=vec4(0.0,0.0,0.0,0.0);
+	if (HasDiffuseTexture)
+		DiffuseColor=texture(DiffuseTexture,TexCoord);
+	else
+		DiffuseColor=vec4(1.0,1.0,1.0,0.0);
+	vec4 SpecularColor=vec4(0.0,0.0,0.0,0.0);
+	if (HasSpecularTexture)
+		SpecularColor=texture(SpecularTexture,TexCoord);
+	else
+		SpecularColor=vec4(1.0,1.0,1.0,0.0);
+	//---------------//
+	WorldPosOut=vec4(Position.xyz,gl_FragCoord.z);
+	NormalOut=Normal;
+	DiffuseColorOut=DiffuseColor.rgb;
+	SpecularColorOut=SpecularColor.rgb;
+	KaOut=Ka;
+	KdOut=Kd;
+	KsOut=Ks;
+	ShininessOut=vec3(Shininess,0,0);
+
+}

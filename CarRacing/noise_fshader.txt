@@ -1,0 +1,25 @@
+#version 400 core
+
+in float vColor;
+
+in vec4 Position_GS;
+in vec3 Normal_GS;
+in vec2 TexCoord_GS;
+
+out vec4 FragColor;
+
+uniform vec3 EyePosition;
+uniform sampler2D UnderWaterTexture;
+uniform samplerCube EnvTexture;
+
+void main() {
+	vec3 EyeRay=Position_GS.xyz-EyePosition;
+	vec3 Normal=Normal_GS;
+	//if (dot(EyeRay,Normal)>=0) EyeRay=-EyeRay;
+	vec3 EnvTexCoord=reflect(EyeRay,Normal_GS);
+	if (EnvTexCoord.y<0.5) EnvTexCoord.y=0.5;
+	//vec3 EnvTexCoord=vec3(TexCoord_GS.x,1,TexCoord_GS.y);
+	vec4 UnderWaterColor=texture(UnderWaterTexture,TexCoord_GS);
+	vec4 SpecularColor=texture(EnvTexture,EnvTexCoord);
+	FragColor=vec4(SpecularColor.rgb,0.8);
+}

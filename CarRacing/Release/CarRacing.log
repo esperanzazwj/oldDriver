@@ -1,0 +1,157 @@
+﻿生成启动时间为 2016/6/26 18:16:32。
+     1>项目“C:\Users\DELL-ZWJ\Desktop\CarRacing\CarRacing\CarRacing.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\programs\Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp nv_dds.cpp
+         main.cpp
+     1>C:\Users\DELL-ZWJ\Desktop\CarRacing\CarRacing\freetype/freetype.h(2614): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\dell-zwj\desktop\carracing\carracing\type.h(40): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\type.h(44): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\type.h(52): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\type.h(65): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\type.h(76): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\type.h(84): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\collision.h(29): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\collision.h(34): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\collision.h(35): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\collision.h(66): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\collision.h(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Base.h(69): warning C4316: “OBB”: 在堆上分配的对象可能不是对齐 16
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Base.h(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Base.h(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Base.h(90): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Base.h(94): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Mesh.h(61): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Mesh.h(66): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(65): warning C4305: “=”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(78): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(80): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(82): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(84): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(90): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(92): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(94): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(98): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Lights.h(100): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(38): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(45): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(50): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(54): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(352): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(353): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Car.h(355): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\FBO.h(79): warning C4244: “初始化”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\CSM.h(9): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\CSM.h(89): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Camera.h(110): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Camera.h(111): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Camera.h(112): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\Camera.h(113): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\UI.h(39): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\dell-zwj\desktop\carracing\carracing\UI.h(67): warning C4018: “>=”: 有符号/无符号不匹配
+     1>c:\users\dell-zwj\desktop\carracing\carracing\UI.h(72): warning C4244: “参数”: 从“double”转换到“GLint”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\UI.h(124): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>c:\users\dell-zwj\desktop\carracing\carracing\DeferShading.h(75): warning C4244: “初始化”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>main.cpp(208): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>main.cpp(215): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>main.cpp(222): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+     1>main.cpp(384): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(395): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(398): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(401): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(404): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>main.cpp(553): warning C4316: “Car”: 在堆上分配的对象可能不是对齐 16
+     1>main.cpp(606): warning C4305: “参数”: 从“double”到“float”截断
+     1>main.cpp(785): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(821): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(829): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(835): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(877): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(885): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(891): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(932): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(940): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(946): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(959): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(983): warning C4305: “+=”: 从“double”到“float”截断
+     1>main.cpp(1033): warning C4305: “+=”: 从“double”到“float”截断
+     1>main.cpp(1073): warning C4316: “Car”: 在堆上分配的对象可能不是对齐 16
+     1>main.cpp(1082): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(1084): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(1086): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(1088): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(1098): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\programs\Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>main.cpp(1130): warning C4305: “参数”: 从“double”到“float”截断
+     1>main.cpp(1133): warning C4305: “参数”: 从“double”到“float”截断
+     1>main.cpp(1135): warning C4305: “参数”: 从“double”到“float”截断
+     1>main.cpp(1140): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(1145): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(1212): warning C4305: “参数”: 从“double”到“float”截断
+     1>main.cpp(1222): warning C4305: “参数”: 从“double”到“float”截断
+     1>main.cpp(1224): warning C4305: “-=”: 从“double”到“float”截断
+     1>main.cpp(1227): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(1228): warning C4305: “+=”: 从“double”到“float”截断
+     1>main.cpp(1232): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(1233): warning C4305: “-=”: 从“double”到“float”截断
+         nv_dds.cpp
+       Link:
+         E:\programs\Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\CarRacing.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\CarRacing.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\CarRacing.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO Release\main.obj
+         Release\nv_dds.obj
+     1>LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         正在生成代码
+     1>c:\users\dell-zwj\desktop\carracing\carracing\matrix.h(89): warning C4715: “MATRIX::operator[]”: 不是所有的控件路径都返回值
+         已完成代码的生成
+     1>freeglut_static.lib(freeglut_window.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_window.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_init.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_init.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_display.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_display.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_callbacks.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_callbacks.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_cursor.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_cursor.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_main.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_main.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_structure.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_structure.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_state.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_state.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_gamemode.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_gamemode.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_input_devices.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_input_devices.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_joystick.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_joystick.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_spaceball.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_spaceball.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_menu.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_menu.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_font.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_font.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_font_data.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_font_data.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_stroke_roman.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_stroke_roman.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>freeglut_static.lib(freeglut_stroke_mono_roman.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“freeglut_static.lib(freeglut_stroke_mono_roman.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“glew32s.lib(glew.obj)”或在“C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         CarRacing.vcxproj -> C:\Users\DELL-ZWJ\Desktop\CarRacing\Release\CarRacing.exe
+     1>已完成生成项目“C:\Users\DELL-ZWJ\Desktop\CarRacing\CarRacing\CarRacing.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:14.59

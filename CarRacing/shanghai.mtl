@@ -1,0 +1,823 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# 创建的文件:16.06.2016 17:05:42
+
+newmtl dimian_1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_dimian_0LightingMap.dds
+	map_Kd text\sat_obj_road_5.dds
+
+newmtl dimian_2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_dimian_1LightingMap.dds
+	map_Kd text\sat_obj_road_5.dds
+
+newmtl kongbaicaizhi
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.6706 0.6706 0.6706
+	Kd 0.6706 0.6706 0.6706
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+
+newmtl daoju_8
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_8LightingMap.dds
+	map_Kd text\spaceship.dds
+
+newmtl luya_0
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obi_luyan_0LightingMap.dds
+	map_Kd text\luya.dds
+
+newmtl dimian_4
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_dimian_2LightingMap.dds
+	map_Kd text\test_flagstone_01.dds
+
+newmtl tree_1_0
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\shu_1.dds
+	map_Kd text\shu_1.dds
+	map_d text\shu_1.dds
+
+newmtl tree_2_1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\shu_3.dds
+	map_Kd text\shu_3.dds
+	map_d text\shu_3.dds
+
+newmtl tree_2_0
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\shu000.dds
+	map_Kd text\shu000.dds
+	map_d text\shu000.dds
+
+newmtl tree_3_0
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\shumm_002.dds
+	map_Kd text\shumm_002.dds
+
+newmtl shangdian_1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_shangdian_2LightingMap.dds
+	map_Kd text\shangdian_1.dds
+
+newmtl shangdian_0
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_shangdian_0LightingMap.dds
+	map_Kd text\shangdian_2.dds
+
+newmtl shangdian_4
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_shangdian_3LightingMap.dds
+	map_Kd text\shangdian_01.dds
+
+newmtl shangdian_2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_shangdian_2LightingMap.dds
+	map_Kd text\shangdian_3.dds
+
+newmtl orig_orig_dyn_obj_hotairballoon
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\dyn_obj_hotairballoon_0LightingMap.dds
+	map_Kd text\dyn_obj_hotairballoon.dds
+
+newmtl wire_196088225
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.7686 0.3451 0.8824
+	Kd 0.7686 0.3451 0.8824
+	Ks 0.3500 0.3500 0.3500
+
+newmtl house_8
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_8_0LightingMap.dds
+	map_Kd text\house_8.dds
+
+newmtl house_13
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_13_0LightingMap.dds
+	map_Kd text\house_13.dds
+
+newmtl orig_baked_sat_obj_building_2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.5880 0.5880 0.5880
+	map_Ka text\sat_obj_building_0LightingMap.dds
+	map_Kd text\sat_obj_building_2.dds
+
+newmtl house_11
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_11_0LightingMap.dds
+	map_Kd text\house_11.dds
+
+newmtl sat_obj_ptreefar
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\ptree.dds
+	map_Kd text\ptree.dds
+	map_d text\ptree.dds
+
+newmtl house_5
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_5_0LightingMap.dds
+	map_Kd text\house_5.dds
+
+newmtl under_water
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\under_water.dds
+	map_Kd text\under_water.dds
+
+newmtl house_1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_1_0LightingMap.dds
+	map_Kd text\house_1.dds
+
+newmtl house_2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_2_0LightingMap.dds
+	map_Kd text\house_2.dds
+
+newmtl house_3
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_3_0LightingMap.dds
+	map_Kd text\house_3.dds
+
+newmtl house_4
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_4_0LightingMap.dds
+	map_Kd text\house_4.dds
+
+newmtl house_6
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_6_0LightingMap.dds
+	map_Kd text\house_6.dds
+
+newmtl house_7
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_7_0LightingMap.dds
+	map_Kd text\house_7.dds
+
+newmtl house_9
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_9_0LightingMap.dds
+	map_Kd text\house_9.dds
+
+newmtl house_10
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_10_0LightingMap.dds
+	map_Kd text\house_10.dds
+
+newmtl house_12
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_12_0LightingMap.dds
+	map_Kd text\house_12.dds
+
+newmtl house_14
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_14_0LightingMap.dds
+	map_Kd text\house_14.dds
+
+newmtl house_15
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_15_0LightingMap.dds
+	map_Kd text\house_15.dds
+
+newmtl house_16
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_16_0LightingMap.dds
+	map_Kd text\house_16.dds
+
+newmtl house_17
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_17_0LightingMap.dds
+	map_Kd text\house_17.dds
+
+newmtl house_18
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_18_0LightingMap.dds
+	map_Kd text\house_18.dds
+
+newmtl house_21
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_19_0LightingMap.dds
+	map_Kd text\house_19.dds
+
+newmtl house_20
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_house_20_0LightingMap.dds
+	map_Kd text\house_20.dds
+
+newmtl orig_shuiguo
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Kd text\shuiguo.dds
+	map_d text\shuiguo.dds
+
+newmtl daoju_1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_1LightingMap.dds
+	map_Kd text\daoju_1.dds
+	map_d text\daoju_1.dds
+
+newmtl daoju_6
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_6LightingMap.dds
+	map_Kd text\daoju_6.dds
+	map_d text\daoju_6.dds
+
+newmtl daoju_4
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_4LightingMap.dds
+	map_Kd text\daoju_4.dds
+	map_d text\daoju_4.dds
+
+newmtl daoju_2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_2LightingMap.dds
+	map_Kd text\guanggao_tiejia.dds
+
+newmtl daoju_7
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_7LightingMap.dds
+	map_Kd text\daguanggao.dds
+
+newmtl daoju_3
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_3LightingMap.dds
+	map_Kd text\daoju_3.dds
+	map_d text\daoju_3.dds
+
+newmtl daoju_5
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_daoju_5LightingMap.dds
+	map_Kd text\daoju_5.dds
+	map_d text\daoju_5.dds
+
+newmtl road_0
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_road_0LightingMap.dds
+	map_Kd text\test_road_4.dds
+
+newmtl road_1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_road_0LightingMap.dds
+	map_Kd text\road_3.dds
+
+newmtl road_2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_road_0LightingMap.dds
+	map_Kd text\road_1.dds
+
+newmtl road_3
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_road_0LightingMap.dds
+	map_Kd text\road_2.dds
+
+newmtl road_4
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.8880 0.8880 0.8880
+	Kd 0.8880 0.8880 0.8880
+	Ks 0.3500 0.3500 0.3500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka text\sat_obj_road_0LightingMap.dds
+	map_Kd text\sat_obj_road_4.dds
+
+newmtl wire_135006006
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.5294 0.0235 0.0235
+	Kd 0.5294 0.0235 0.0235
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_008061138
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.0314 0.2392 0.5412
+	Kd 0.0314 0.2392 0.5412
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_177028149
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6941 0.1098 0.5843
+	Kd 0.6941 0.1098 0.5843
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_166229229
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6510 0.8980 0.8980
+	Kd 0.6510 0.8980 0.8980
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_028089177
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.1098 0.3490 0.6941
+	Kd 0.1098 0.3490 0.6941
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_229166215
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8980 0.6510 0.8431
+	Kd 0.8980 0.6510 0.8431
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_057008136
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.2235 0.0314 0.5333
+	Kd 0.2235 0.0314 0.5333
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_184155229
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.7216 0.6078 0.8980
+	Kd 0.7216 0.6078 0.8980
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_113135006
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.4431 0.5294 0.0235
+	Kd 0.4431 0.5294 0.0235
+	Ks 0.3500 0.3500 0.3500

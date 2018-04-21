@@ -1,0 +1,19 @@
+#version 400 core
+uniform mat4 MVmat;
+uniform mat4 MVPmat;
+uniform mat3 Normalmat;
+layout(location=0) in vec3 VertexPosition;
+layout(location=1) in vec3 VertexNormal;
+layout(location=2) in vec2 VertexTexCoord;
+out vec4 Position;
+out vec2 TexCoord;
+out vec3 Normal;
+void main()
+{
+	vec4 VertexPosition4=vec4(VertexPosition,1.0);
+	Position=MVmat*VertexPosition4;
+	TexCoord=VertexTexCoord;
+	Normal=normalize(Normalmat*VertexNormal);
+	gl_Position=MVPmat*VertexPosition4;
+};
+

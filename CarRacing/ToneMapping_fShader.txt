@@ -1,0 +1,40 @@
+#version 400 core  //reference to NVIDIA SDK 8.0
+in vec2 TexCoord_f;
+layout(location=0) out vec4 fcolor;
+const float g_fGamma = 1.0/2.0;
+uniform float g_fBlurAmount;
+uniform float g_fRadialEffectAmount;
+uniform float g_fExposure;
+uniform sampler2D g_SceneTexture;
+uniform sampler2D g_BlurTexture;
+
+vec4 CaculateRadial(vec2 p_vec2TexCoord,int p_iSampleNumber,float p_fStartScale, float p_fScaleMul)
+{
+    vec4 vec4TempColor = vec4(0.0);
+    float fCurrentScale = p_fStartScale;
+    vec2 vec2TempTexCoord = vec2(0.0);
+    
+    for(int i = 0; i < p_iSampleNumber; ++i) 
+    {
+        vec2TempTexCoord = (p_vec2TexCoord - 0.5)*fCurrentScale + 0.5; 
+        vec4TempColor += texture2D(g_BlurTexture, vec2TempTexCoord);
+        fCurrentScale *= p_fScaleMul;
+    }
+    vec4TempColor /= float(p_iSampleNumber);
+    return vec4TempColor;
+}
+
+void main()
+{
+    vec4 vec4SceneColor = texture2D(g_SceneTexture, TexCoord_f); 
+    vec4 vec4BlurColor = texture2D(g_BlurTexture, TexCoord_f);
+    vec4 vec4RadialEffectColor = CaculateRadial(TexCoord_f, 30, 1.0, 0.95);
+    
+    vec4 vec4Temp = mix(vec4SceneColor, vec4BlurColor, g_fBlurAmount);
+    vec4Temp += vec4RadialEffectColor*g_fRadialEffectAmount;
+    vec4Temp *= g_fExposure;
+    //vec4Temp.rgb = pow(vec4Temp.rgb, vec3(g_fGamma));
+	fcolor=vec4Temp;
+    //fcolor = vec4(pow(vec4Temp.r,g_fGamma),pow(vec4Temp.g,g_fGamma),pow(vec4Temp.b,g_fGamma),vec4Temp.a);
+}
+

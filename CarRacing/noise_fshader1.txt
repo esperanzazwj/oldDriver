@@ -1,0 +1,108 @@
+#version 400 core
+
+in float vColor;
+
+in vec4 Position_GS;
+in vec3 Normal_GS;
+in vec2 TexCoord_GS;
+
+out vec4 FragColor;
+struct LightProperties
+{
+	bool isEnabled;
+	bool isLocal;
+	bool isSpot;
+	vec3 ambient;
+	vec3 color;
+	vec3 position;
+	vec3 coneDirection;
+	float spotCosCutoff;
+	float spotExponent;
+	float constantAttenuation;
+	float linearAttenuation;
+	float quadraticAttenuation;
+};
+const int MaxLights=10;
+const int MaxDiffuseTextures=2;
+const int MaxSpecularTextures=2;
+uniform int NumLights;
+uniform int NumDiffuseTextures;
+uniform int NumSpecularTextures;
+uniform LightProperties Lights[MaxLights];
+uniform vec3 Ka;
+uniform vec3 Kd;
+uniform vec3 Ks;
+uniform float Opacity;
+uniform float Shininess;
+uniform float EnvFactor;
+
+uniform sampler2D DiffuseTexture[MaxDiffuseTextures];
+uniform sampler2D SpecularTexture[MaxSpecularTextures];
+
+uniform vec3 EyePosition;
+uniform samplerCube EnvTexture;
+
+void main() {
+	vec3 Normal=Normal_GS;
+	vec2 TexCoord=TexCoord_GS;
+	vec4 Position=Position_GS;
+	vec3 ambientLight=vec3(0.0,0.0,0.0);
+	vec3 scatteredLight=vec3(0.0,0.0,0.0);
+	vec3 reflectedLight=vec3(0.0,0.0,0.0);
+	for (int i=0;i<NumLights;i++)
+	{
+		if (!Lights[i].isEnabled) continue;
+		vec3 halfVector;
+		vec3 lightDirection=Lights[i].position;
+		vec3 EyeDirection=EyePosition-Position.xyz;
+		float attenuation=1.0;
+		if (Lights[i].isLocal)
+		{
+			lightDirection=lightDirection-Position.xyz;
+			float lightDistance=length(lightDirection);
+			lightDirection=lightDirection/lightDistance;
+			attenuation=1.0/(Lights[i].constantAttenuation+Lights[i].linearAttenuation*lightDistance+Lights[i].quadraticAttenuation*lightDistance*lightDistance);
+			if (Lights[i].isSpot)
+			{
+				float spotCos=dot(lightDirection,-Lights[i].coneDirection);
+				if (spotCos<Lights[i].spotCosCutoff)
+					attenuation=0.0;
+				else attenuation*=pow(spotCos,Lights[i].spotExponent);
+			}
+			halfVector=normalize(lightDirection+EyeDirection);
+		}
+		else halfVector=normalize(lightDirection+EyeDirection);
+		float diffuse=max(0.0,dot(Normal,lightDirection));
+		float specular=max(0.0,dot(Normal,halfVector));
+		if (diffuse==0.0 || Shininess==0.0)
+			specular=0.0;
+		else
+			specular=pow(specular,Shininess);
+		ambientLight+=Ka*Lights[i].color*Lights[i].ambient*attenuation;
+		scatteredLight+=Kd*Lights[i].color*diffuse*attenuation;
+		reflectedLight+=Ks*Lights[i].color*specular*attenuation;
+	}
+	vec4 DiffuseColor=vec4(0.0,0.0,0.0,0.0);
+	if (NumDiffuseTextures>0)
+		for (int i=0;i<NumDiffuseTextures;i++)
+			DiffuseColor+=texture(DiffuseTexture[i],TexCoord);
+	else
+		DiffuseColor=vec4(1.0,1.0,1.0,0.0);
+	vec4 ambientColor=DiffuseColor;
+	vec4 SpecularColor=vec4(0.0,0.0,0.0,0.0);
+	if (NumSpecularTextures>0)
+		for (int i=0;i<NumSpecularTextures;i++)
+			SpecularColor+=texture(SpecularTexture[i],TexCoord);
+	else
+		SpecularColor=vec4(1.0,1.0,1.0,0.0);
+
+	vec3 EyeRay=Position_GS.xyz-EyePosition;
+	vec3 EnvTexCoord=reflect(EyeRay,Normal_GS);
+	if (EnvTexCoord.y<0.5) EnvTexCoord.y=0.5;
+	vec4 EnvColor=texture(EnvTexture,EnvTexCoord);
+
+	vec3 DiffuseColorMixed=mix(DiffuseColor.rgb,EnvColor.rgb,EnvFactor);
+	vec3 SpecularColorMixed=mix(SpecularColor.rgb,EnvColor.rgb,EnvFactor);
+	vec3 rgb=DiffuseColorMixed*(scatteredLight+ambientLight)+SpecularColorMixed.rgb*reflectedLight;
+	FragColor=vec4(rgb,Opacity);
+}

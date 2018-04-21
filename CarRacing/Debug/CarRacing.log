@@ -1,0 +1,165 @@
+﻿生成启动时间为 2016/6/17 17:00:31。
+     1>项目“F:\图形学大作业\CarRacing\CarRacing\CarRacing.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“F:\图形学大作业\CarRacing\Debug\”。
+       InitializeBuildStatus:
+         正在创建“Debug\CarRacing.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt loadtexture.cpp main.cpp nv_dds.cpp vdds.cpp
+         vdds.cpp
+     1>f:\图形学大作业\carracing\carracing\vdds.cpp(576): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(234) : 参见“fopen”的声明
+         nv_dds.cpp
+         main.cpp
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\freetype\freetype.h(2614): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\freetype\freetype.h(2614): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\freetype\freetype.h(2614): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\图形学大作业\carracing\carracing\type.h(40): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\type.h(44): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\type.h(52): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\type.h(65): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\type.h(76): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\type.h(84): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\collision.h(29): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\collision.h(34): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>f:\图形学大作业\carracing\carracing\collision.h(35): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\collision.h(66): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\collision.h(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\base.h(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\base.h(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\base.h(90): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\base.h(94): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\mesh.h(63): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\mesh.h(68): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\lights.h(65): warning C4305: “=”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\lights.h(78): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(80): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(82): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(84): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(90): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(92): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(94): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(98): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\lights.h(100): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\car.h(31): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(31): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(31): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(31): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(32): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(33): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(34): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(35): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(36): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(45): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\car.h(50): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(54): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\car.h(370): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(371): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>f:\图形学大作业\carracing\carracing\car.h(373): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>f:\图形学大作业\carracing\carracing\fbo.h(76): warning C4244: “初始化”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\fbo.h(77): warning C4244: “初始化”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\fbo.h(78): warning C4244: “初始化”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\fbo.h(78): warning C4244: “初始化”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\csm.h(9): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\csm.h(114): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\csm.h(114): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\csm.h(114): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\camera.h(110): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\camera.h(111): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\camera.h(112): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\camera.h(113): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\ui.h(40): warning C4305: “初始化”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\ui.h(68): warning C4018: “>=”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\ui.h(68): warning C4018: “>=”: 有符号/无符号不匹配
+     1>f:\图形学大作业\carracing\carracing\ui.h(73): warning C4244: “参数”: 从“double”转换到“GLint”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\ui.h(125): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(294): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(294): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(305): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(308): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(311): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(314): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(506): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(506): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(506): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(580): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(616): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(624): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(630): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(672): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(680): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(686): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(730): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(738): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(744): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(757): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(781): warning C4305: “+=”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(831): warning C4305: “+=”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(879): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(881): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(883): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(885): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(895): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2010\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>f:\图形学大作业\carracing\carracing\main.cpp(926): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(929): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(931): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(936): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(941): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1003): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1007): warning C4305: “参数”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1009): warning C4305: “-=”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1012): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1013): warning C4305: “+=”: 从“double”到“float”截断
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1017): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>f:\图形学大作业\carracing\carracing\main.cpp(1018): warning C4305: “-=”: 从“double”到“float”截断
+         loadtexture.cpp
+         正在生成代码...
+     1>f:\图形学大作业\carracing\carracing\matrix.h(89): warning C4715: “MATRIX::operator[]”: 不是所有的控件路径都返回值
+       Link:
+         D:\VS2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\图形学大作业\CarRacing\Debug\CarRacing.exe" /NOLOGO opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_ml2411d.lib opencv_nonfree2411d.lib opencv_objdetect2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_videostab2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CarRacing.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\图形学大作业\CarRacing\Debug\CarRacing.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\图形学大作业\CarRacing\Debug\CarRacing.lib" /MACHINE:X86 Debug\loadtexture.obj
+         Debug\main.obj
+         Debug\nv_dds.obj
+         Debug\vdds.obj
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         CarRacing.vcxproj -> F:\图形学大作业\CarRacing\Debug\CarRacing.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\图形学大作业\CarRacing\Debug\CarRacing.exe;#1" /manifest Debug\CarRacing.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\CarRacing.unsuccessfulbuild”。
+         正在对“Debug\CarRacing.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\图形学大作业\CarRacing\CarRacing\CarRacing.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.49

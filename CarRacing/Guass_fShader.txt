@@ -1,0 +1,41 @@
+#version 400 core
+in vec2 TexCoord_f;
+layout(location=0) out vec4 fcolor;
+uniform sampler2D tex2D;
+uniform bool ifWidth;   
+uniform int Len;
+void main()
+{
+    float d = 1.0/float(Len);
+    vec4 color = vec4(0.0,0.0,0.0,0.0);
+	if (ifWidth)
+	{
+	    color += texture2D(tex2D,TexCoord_f+vec2(-5.0*d,0.0)) * 0.1;
+		color += texture2D(tex2D,TexCoord_f+vec2(-4.0*d,0.0)) * 0.22;
+	    color += texture2D(tex2D,TexCoord_f+vec2(-3.0*d,0.0)) * 0.358;
+		color += texture2D(tex2D,TexCoord_f+vec2(-2.0*d,0.0)) * 0.523;
+		color += texture2D(tex2D,TexCoord_f+vec2(-1.0*d,0.0)) * 0.843;
+		color += texture2D(tex2D,TexCoord_f) * 1.0;
+		color += texture2D(tex2D,TexCoord_f+vec2( 1.0*d,0.0)) * 0.843;
+		color += texture2D(tex2D,TexCoord_f+vec2( 2.0*d,0.0)) * 0.523;
+		color += texture2D(tex2D,TexCoord_f+vec2( 3.0*d,0.0)) * 0.358;
+		color += texture2D(tex2D,TexCoord_f+vec2( 4.0*d,0.0)) * 0.22;
+		color += texture2D(tex2D,TexCoord_f+vec2( 5.0*d,0.0)) * 0.1;
+		color /= 5.0;
+	}
+	else
+	{
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0,-5.0*d)) * 0.1;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0,-4.0*d)) * 0.22;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0,-3.0*d)) * 0.358;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0,-2.0*d)) * 0.563;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0,-1.0*d)) * 0.873;
+		color += texture2D(tex2D,TexCoord_f) * 1.0;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0, 1.0*d)) * 0.873;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0, 2.0*d)) * 0.563;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0, 3.0*d)) * 0.358;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0, 4.0*d)) * 0.22;
+		color += texture2D(tex2D,TexCoord_f+vec2(0.0, 5.0*d)) * 0.1;
+	}
+    fcolor = color;
+}
